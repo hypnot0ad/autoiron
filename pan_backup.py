@@ -1,20 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-
-''' Takes input (from stdin), parses it into the proper format, and then
-    sends a POST request to a firewall in order to add the user id and IP
-    address into the firewall's logs. '''
-
-##########################################################################
-### TODO LIST:
-### - Sanitize inputs for apps
-### - create a log for failed rules
-### - Trim names to be less than 31 characters
-### - Desensitise case
-### - DONE = Automatically get API key as function
-### - DONE = Take URL and Credentials as user input
-### - Order the Security Policy
-##########################################################################
     
 from xml.etree import ElementTree
 from xml.dom import minidom
